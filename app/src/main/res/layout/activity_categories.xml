@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".feature.categories.CategoriesActivity"
     android:background="@color/white">
+
     <RelativeLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
@@ -22,15 +23,15 @@
             android:src="@drawable/arrow" />
 
         <TextView
-            android:layout_toEndOf="@+id/imgbtn_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/imgbtn_back"
             android:fontFamily="@font/roboto_medium"
             android:text="All Categories"
             android:textColor="@color/black"
-            android:textSize="20sp"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="10dp"/>
+            android:textSize="20sp" />
     </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView

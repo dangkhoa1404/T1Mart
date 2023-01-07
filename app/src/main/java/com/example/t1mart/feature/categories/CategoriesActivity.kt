@@ -1,5 +1,6 @@
 package com.example.t1mart.feature.categories
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -8,7 +9,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.t1mart.R
 import com.example.t1mart.api.categories.Category
+import com.example.t1mart.extension.App
 import com.example.t1mart.feature.categories.adapter.CategoryAdapter
+import com.example.t1mart.feature.categoryProducts.CategoryProductsActivity
 import kotlinx.android.synthetic.main.activity_categories.*
 import kotlin.math.log
 
@@ -85,6 +88,9 @@ class CategoriesActivity : AppCompatActivity(), CategoryAdapter.onItemClickListe
     }
 
     override fun onItemClick(category: String) {
-        Toast.makeText(this, "${category}", Toast.LENGTH_SHORT).show()
+        //Toast.makeText(this, "${category}", Toast.LENGTH_SHORT).show()
+        App.DATA_PRODUCT = category
+        Log.d("Khoaaa", "${App.DATA_PRODUCT}")
+        startActivity(Intent(this, CategoryProductsActivity::class.java))
     }
 }

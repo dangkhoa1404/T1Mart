@@ -1,6 +1,7 @@
 package com.example.t1mart.feature.categories.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.t1mart.R
 import com.example.t1mart.api.categories.Category
+import com.example.t1mart.feature.categoryProducts.CategoryProductsActivity
 import kotlinx.android.synthetic.main.categories.view.*
 
 class CategoryAdapter(val context: Context,
@@ -27,6 +29,9 @@ class CategoryAdapter(val context: Context,
         //holder.itemView.img_category.setImageResource(currentItem.thumbnail)
         holder.itemView.tv_category.text = currentItem.category
         holder.itemView.item.setOnClickListener(){
+//            var i = Intent(context, CategoryProductsActivity::class.java)
+//            i.putExtra("page", position)
+//            context.startActivity(i)
             listener.onItemClick(currentItem.category)
         }
     }

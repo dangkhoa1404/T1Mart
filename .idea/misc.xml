@@ -4,11 +4,19 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/drawable/arrow.xml" value="0.2125" />
+        <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/drawable/arrow2.xml" value="0.2125" />
         <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/drawable/boder_categories.xml" value="0.2125" />
+        <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/drawable/cart.xml" value="0.2125" />
         <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/drawable/header.xml" value="0.2125" />
+        <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/drawable/search.xml" value="0.2125" />
+        <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/drawable/searchBar.xml" value="0.2125" />
+        <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/drawable/search_bar.xml" value="0.2125" />
+        <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/drawable/strikethrough_foreground.xml" value="0.2125" />
         <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/layout/activity_categories.xml" value="0.264" />
+        <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/layout/activity_category_products.xml" value="0.264" />
         <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
         <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/layout/categories.xml" value="0.264" />
+        <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/layout/category_products.xml" value="0.253125" />
       </map>
     </option>
   </component>
