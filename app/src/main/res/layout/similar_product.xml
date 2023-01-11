@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="8dp"
-    android:layout_marginVertical="10dp"
+    android:layout_marginVertical="5dp"
     android:layout_marginHorizontal="5dp"
     android:id="@+id/item"
     android:layout_gravity="center_horizontal"
     android:background="@drawable/boder_categories">
     <LinearLayout
         android:padding="10dp"
-
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -22,7 +21,15 @@
             android:layout_height="200dp"
             android:padding="10dp"
             android:src="@drawable/automotive"
-            android:scaleType="centerCrop"/>
+            />
+        <TextView
+            android:id="@+id/tv_brandProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/text"
+            android:textColor="@color/black"
+            />
         <TextView
             android:id="@+id/tv_titleProduct"
             android:layout_width="match_parent"
@@ -31,14 +38,7 @@
             android:text="@string/text"
             android:textColor="@color/black"
             android:textStyle="bold" />
-        <TextView
-            android:id="@+id/tv_categoryProduct"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:text="@string/text"
-            android:textColor="@color/black"
-            />
+
         <LinearLayout
             android:layout_marginTop="3dp"
             android:orientation="horizontal"

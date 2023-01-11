@@ -1,5 +1,6 @@
 package com.example.t1mart.feature.categoryProducts
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -8,7 +9,9 @@ import android.widget.Toast
 import com.example.t1mart.R
 import com.example.t1mart.api.product.apiProductInterface
 import com.example.t1mart.extension.App
+import com.example.t1mart.feature.categories.CategoriesActivity
 import com.example.t1mart.feature.categoryProducts.adapter.ProductsAdapter
+import com.example.t1mart.feature.productInformation.ProductInformationActivity
 import kotlinx.android.synthetic.main.activity_category_products.*
 import quicktype.Total
 import retrofit2.Call
@@ -18,7 +21,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 
-class CategoryProductsActivity : AppCompatActivity() {
+class CategoryProductsActivity : AppCompatActivity(), ProductsAdapter.onItemClickListener {
 
     val BASE_URL = "https://dummyjson.com/"
     private lateinit var productAdapter : ProductsAdapter
@@ -78,7 +81,7 @@ class CategoryProductsActivity : AppCompatActivity() {
                                     Call<Total>?, response: Response<Total>?) {
                 val responseBody = response!!.body()!!
                 data = responseBody
-                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!)
+                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!, this@CategoryProductsActivity)
             }
 
             override fun onFailure(call: Call<Total>?, t: Throwable) {
@@ -100,7 +103,7 @@ class CategoryProductsActivity : AppCompatActivity() {
                                     Call<Total>?, response: Response<Total>?) {
                 val responseBody = response!!.body()!!
                 data = responseBody
-                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!)
+                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!, this@CategoryProductsActivity)
             }
 
             override fun onFailure(call: Call<Total>?, t: Throwable) {
@@ -122,7 +125,7 @@ class CategoryProductsActivity : AppCompatActivity() {
                                     Call<Total>?, response: Response<Total>?) {
                 val responseBody = response!!.body()!!
                 data = responseBody
-                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!)
+                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!, this@CategoryProductsActivity)
             }
 
             override fun onFailure(call: Call<Total>?, t: Throwable) {
@@ -144,7 +147,7 @@ class CategoryProductsActivity : AppCompatActivity() {
                                     Call<Total>?, response: Response<Total>?) {
                 val responseBody = response!!.body()!!
                 data = responseBody
-                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!)
+                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!, this@CategoryProductsActivity)
             }
 
             override fun onFailure(call: Call<Total>?, t: Throwable) {
@@ -166,7 +169,7 @@ class CategoryProductsActivity : AppCompatActivity() {
                                     Call<Total>?, response: Response<Total>?) {
                 val responseBody = response!!.body()!!
                 data = responseBody
-                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!)
+                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!, this@CategoryProductsActivity)
             }
 
             override fun onFailure(call: Call<Total>?, t: Throwable) {
@@ -188,7 +191,7 @@ class CategoryProductsActivity : AppCompatActivity() {
                                     Call<Total>?, response: Response<Total>?) {
                 val responseBody = response!!.body()!!
                 data = responseBody
-                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!)
+                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!, this@CategoryProductsActivity)
             }
 
             override fun onFailure(call: Call<Total>?, t: Throwable) {
@@ -210,7 +213,7 @@ class CategoryProductsActivity : AppCompatActivity() {
                                     Call<Total>?, response: Response<Total>?) {
                 val responseBody = response!!.body()!!
                 data = responseBody
-                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!)
+                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!, this@CategoryProductsActivity)
             }
 
             override fun onFailure(call: Call<Total>?, t: Throwable) {
@@ -232,7 +235,7 @@ class CategoryProductsActivity : AppCompatActivity() {
                                     Call<Total>?, response: Response<Total>?) {
                 val responseBody = response!!.body()!!
                 data = responseBody
-                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!)
+                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!, this@CategoryProductsActivity)
             }
 
             override fun onFailure(call: Call<Total>?, t: Throwable) {
@@ -254,7 +257,7 @@ class CategoryProductsActivity : AppCompatActivity() {
                                     Call<Total>?, response: Response<Total>?) {
                 val responseBody = response!!.body()!!
                 data = responseBody
-                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!)
+                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!, this@CategoryProductsActivity)
             }
 
             override fun onFailure(call: Call<Total>?, t: Throwable) {
@@ -276,7 +279,7 @@ class CategoryProductsActivity : AppCompatActivity() {
                                     Call<Total>?, response: Response<Total>?) {
                 val responseBody = response!!.body()!!
                 data = responseBody
-                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!)
+                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!, this@CategoryProductsActivity)
             }
 
             override fun onFailure(call: Call<Total>?, t: Throwable) {
@@ -298,7 +301,7 @@ class CategoryProductsActivity : AppCompatActivity() {
                                     Call<Total>?, response: Response<Total>?) {
                 val responseBody = response!!.body()!!
                 data = responseBody
-                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!)
+                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!, this@CategoryProductsActivity)
             }
 
             override fun onFailure(call: Call<Total>?, t: Throwable) {
@@ -320,7 +323,7 @@ class CategoryProductsActivity : AppCompatActivity() {
                                     Call<Total>?, response: Response<Total>?) {
                 val responseBody = response!!.body()!!
                 data = responseBody
-                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!)
+                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!, this@CategoryProductsActivity)
             }
 
             override fun onFailure(call: Call<Total>?, t: Throwable) {
@@ -342,7 +345,7 @@ class CategoryProductsActivity : AppCompatActivity() {
                                     Call<Total>?, response: Response<Total>?) {
                 val responseBody = response!!.body()!!
                 data = responseBody
-                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!)
+                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!, this@CategoryProductsActivity)
             }
 
             override fun onFailure(call: Call<Total>?, t: Throwable) {
@@ -364,7 +367,7 @@ class CategoryProductsActivity : AppCompatActivity() {
                                     Call<Total>?, response: Response<Total>?) {
                 val responseBody = response!!.body()!!
                 data = responseBody
-                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!)
+                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!, this@CategoryProductsActivity)
             }
 
             override fun onFailure(call: Call<Total>?, t: Throwable) {
@@ -386,7 +389,7 @@ class CategoryProductsActivity : AppCompatActivity() {
                                     Call<Total>?, response: Response<Total>?) {
                 val responseBody = response!!.body()!!
                 data = responseBody
-                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!)
+                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!, this@CategoryProductsActivity)
             }
 
             override fun onFailure(call: Call<Total>?, t: Throwable) {
@@ -408,7 +411,7 @@ class CategoryProductsActivity : AppCompatActivity() {
                                     Call<Total>?, response: Response<Total>?) {
                 val responseBody = response!!.body()!!
                 data = responseBody
-                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!)
+                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!, this@CategoryProductsActivity)
             }
 
             override fun onFailure(call: Call<Total>?, t: Throwable) {
@@ -430,7 +433,7 @@ class CategoryProductsActivity : AppCompatActivity() {
                                     Call<Total>?, response: Response<Total>?) {
                 val responseBody = response!!.body()!!
                 data = responseBody
-                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!)
+                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!, this@CategoryProductsActivity)
             }
 
             override fun onFailure(call: Call<Total>?, t: Throwable) {
@@ -452,7 +455,7 @@ class CategoryProductsActivity : AppCompatActivity() {
                                     Call<Total>?, response: Response<Total>?) {
                 val responseBody = response!!.body()!!
                 data = responseBody
-                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!)
+                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!, this@CategoryProductsActivity)
             }
 
             override fun onFailure(call: Call<Total>?, t: Throwable) {
@@ -474,7 +477,7 @@ class CategoryProductsActivity : AppCompatActivity() {
                                     Call<Total>?, response: Response<Total>?) {
                 val responseBody = response!!.body()!!
                 data = responseBody
-                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!)
+                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!, this@CategoryProductsActivity)
             }
 
             override fun onFailure(call: Call<Total>?, t: Throwable) {
@@ -496,7 +499,7 @@ class CategoryProductsActivity : AppCompatActivity() {
                                     Call<Total>?, response: Response<Total>?) {
                 val responseBody = response!!.body()!!
                 data = responseBody
-                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!)
+                list_categories.adapter = ProductsAdapter(this@CategoryProductsActivity, data.products!!, this@CategoryProductsActivity)
             }
 
             override fun onFailure(call: Call<Total>?, t: Throwable) {
@@ -514,5 +517,12 @@ class CategoryProductsActivity : AppCompatActivity() {
     override fun onBackPressed() {
         super.onBackPressed()
         finish()
+    }
+
+    override fun onItemClick(index: String) {
+        val intent = Intent(this, ProductInformationActivity::class.java)
+        intent.putExtra("index", index)
+        startActivity(intent)
+//        Log.d("Category", "${App.DATA_PRODUCT}")
     }
 }
