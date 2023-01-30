@@ -56,4 +56,9 @@ dependencies {
 //    sdp
     implementation 'com.intuit.sdp:sdp-android:1.1.0'
 
+    //    Lottie Animation
+    implementation 'com.airbnb.android:lottie:5.2.0'
+
+    //Image Slider
+
 }

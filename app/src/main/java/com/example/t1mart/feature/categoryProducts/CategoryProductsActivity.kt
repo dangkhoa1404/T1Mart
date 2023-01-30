@@ -36,7 +36,7 @@ class CategoryProductsActivity : AppCompatActivity(), ProductsAdapter.onItemClic
         backToPreviousActivity()
     }
 
-    private fun searchProductData() {
+    private fun getProductData() {
 
     }
 

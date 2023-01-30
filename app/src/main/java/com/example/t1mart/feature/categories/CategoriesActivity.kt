@@ -27,7 +27,10 @@ class CategoriesActivity : AppCompatActivity(), CategoryAdapter.onItemClickListe
 //        linearLayoutManager = LinearLayoutManager(this)
 //        list_categories.layoutManager = linearLayoutManager
         setUpRecyclerView()
+        backToPreviousActivity()
     }
+
+
 
     private fun setUpRecyclerView() {
         imgCategory = arrayOf(
@@ -92,5 +95,15 @@ class CategoriesActivity : AppCompatActivity(), CategoryAdapter.onItemClickListe
         App.DATA_PRODUCT = category
         Log.d("Khoaaa", "${App.DATA_PRODUCT}")
         startActivity(Intent(this, CategoryProductsActivity::class.java))
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
+    }
+    private fun backToPreviousActivity() {
+        imgbtn_back.setOnClickListener(){
+            onBackPressed()
+        }
     }
 }

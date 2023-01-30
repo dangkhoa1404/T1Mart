@@ -6,6 +6,8 @@
         <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/drawable/arrow.xml" value="0.2125" />
         <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/drawable/arrow2.xml" value="0.2125" />
         <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/drawable/boder_categories.xml" value="0.2125" />
+        <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/drawable/boder_categories_home.xml" value="0.2125" />
+        <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/drawable/brand.xml" value="0.2125" />
         <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/drawable/button.xml" value="0.2125" />
         <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/drawable/button_addtocart.xml" value="0.2125" />
         <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/drawable/button_buynow.xml" value="0.2125" />
@@ -16,16 +18,23 @@
         <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/drawable/search.xml" value="0.2125" />
         <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/drawable/searchBar.xml" value="0.2125" />
         <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/drawable/search_bar.xml" value="0.2125" />
+        <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/drawable/search_bar_main.xml" value="0.2125" />
+        <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/drawable/search_main.xml" value="0.2125" />
         <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/drawable/strikethrough_foreground.xml" value="0.2125" />
         <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/drawable/tv_bestseller.xml" value="0.2125" />
         <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/layout/activity_categories.xml" value="0.264" />
+        <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/layout/activity_categories_home.xml" value="0.20863616930312098" />
         <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/layout/activity_category_products.xml" value="0.264" />
-        <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/layout/activity_product_information.xml" value="0.16353887399463807" />
+        <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/layout/activity_main.xml" value="0.2130074203404627" />
+        <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/layout/activity_product_information.xml" value="0.264" />
+        <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/layout/activity_splash_screen.xml" value="0.2" />
         <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/layout/button.xml" value="0.20778110303548525" />
         <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/layout/categories.xml" value="0.264" />
+        <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/layout/categories_home.xml" value="0.4" />
         <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/layout/category_products.xml" value="0.253125" />
-        <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/layout/item_image.xml" value="0.20854700854700856" />
+        <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/layout/category_products_recently.xml" value="0.20863616930312098" />
+        <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/layout/category_products_suggested.xml" value="0.20863616930312098" />
+        <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/layout/item_image.xml" value="0.4" />
         <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/layout/product_information.xml" value="0.264" />
         <entry key="..\:/dulieukhach/Android/Exercise/BaiTapLonCongNgheMoi/T1Mart/app/src/main/res/layout/similar_product.xml" value="0.20863616930312098" />
       </map>

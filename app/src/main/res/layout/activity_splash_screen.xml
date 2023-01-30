@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feature.splashScreen.SplashScreenActivity"
+    android:background="@color/white">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/screen_text"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="T"
+                android:textColor="@color/black"
+                android:fontFamily="@font/roboto_medium"
+                android:textStyle="bold"
+                android:textSize="@dimen/_35sdp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/textBrand"
+                android:fontFamily="@font/roboto_medium"
+                android:textStyle="bold"
+                android:textSize="@dimen/_35sdp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MART"
+                android:textColor="@color/black"
+                android:fontFamily="@font/roboto_medium"
+                android:textStyle="bold"
+                android:textSize="@dimen/_35sdp"/>
+        </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="v 1.0"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/_5sdp"
+        android:gravity="center"/>
+</RelativeLayout>

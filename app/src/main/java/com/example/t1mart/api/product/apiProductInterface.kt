@@ -1,10 +1,19 @@
 package com.example.t1mart.api.product
 
+import quicktype.Product
 import quicktype.Total
 import retrofit2.Call
 import retrofit2.http.GET
+import retrofit2.http.Path
 
 interface apiProductInterface {
+
+    @GET("products/{index}")
+    fun getDataInformation(
+        @Path("index") index: String
+    ) : Call<Total>
+
+
     @GET("products/category/smartphones")
     fun getDataSmartphone() :Call<Total>
 

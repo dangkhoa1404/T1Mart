@@ -12,6 +12,7 @@
     <color name="mainColor">#FFFFFF</color>
     <color name="textBrand">#C80D0D</color>
     <color name="borderHeader">#f3f3f3</color>
+    <color name="searchBar_Main">#f5f5f7</color>
     <color name="borderFramesCategory">#e0e0e0</color>
     <color name="borderButton">#585858</color>
     <color name="bestSeller">#00aa07</color>
